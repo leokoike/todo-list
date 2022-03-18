@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
-from api.route.todo_route import app as todo_app
+from app.api.route.todo_route import app as todo_app
 
 app = FastAPI(title="TODO LIST API", description="Todo list API.", version="1.1.0-1")
 app.add_middleware(
